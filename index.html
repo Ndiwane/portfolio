@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ndiwane — Software Developer & Cybersecurity Enthusiast from Cameroon. Flutter, Firebase, Kali Linux."/>
+  <title>Ndiwane · Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+ 
+<!-- LEAF PARTICLE CANVAS -->
+<canvas id="leafCanvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.7;"></canvas>
+ 
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+ 
+<!-- ════════════════════════════
+     NAVBAR
+════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <a href="#hero" class="nav-logo">Ndi<span class="dot">.</span>dev</a>
+ 
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="hire.html" class="nav-hire">Hire Me</a></li>
+  </ul>
+ 
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+ 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#certificates">Certificates</a>
+  <a href="hire.html">Hire Me</a>
+</div>
+ 
+ 
+<!-- ════════════════════════════
+     HERO
+════════════════════════════ -->
+<section id="hero">
+  <!-- ambient blobs -->
+  <div class="hero-blob blob1"></div>
+  <div class="hero-blob blob2"></div>
+  <div class="hero-blob blob3"></div>
+ 
+  <div class="hero-inner">
+ 
+    <!-- LEFT — TEXT -->
+    <div class="hero-text">
+      <div class="hero-tag">
+        <span class="pulse-dot"></span>
+        Available for Internships & Freelance
+      </div>
+ 
+      <h1 class="hero-title">
+        <span class="name-line glitch word-hover" data-text="Ndiwane">Ndiwane</span>
+        <span class="role-line">
+          <span id="typewriterRole">Software Developer</span><span class="typewriter-cursor"></span>
+        </span>
+      </h1>
+ 
+      <p class="hero-desc">
+        B.Tech graduate in Software Development from the University of Buea, Cameroon.
+        I build cross-platform mobile apps with Flutter &amp; Firebase, and I'm actively growing
+        in cybersecurity — from Kali Linux home labs to TryHackMe CTFs.
+      </p>
+ 
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="hire.html" class="btn-outline">Hire Me →</a>
+      </div>
+ 
+      <div class="hero-stats">
+        <div class="h-stat">
+          <div class="h-stat-num"><span data-count="3">0</span><span class="counter-suffix">+</span></div>
+          <div class="h-stat-label">Years Coding</div>
+        </div>
+        <div class="h-stat">
+          <div class="h-stat-num"><span data-count="5">0</span><span class="counter-suffix">+</span></div>
+          <div class="h-stat-label">Projects Built</div>
+        </div>
+        <div class="h-stat">
+          <div class="h-stat-num" style="font-size:1.5rem;">B.Tech</div>
+          <div class="h-stat-label">Software Dev</div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- RIGHT — PHOTO -->
+    <div class="hero-photo-wrap">
+      <div class="photo-ring"></div>
+ 
+      <div class="photo-frame">
+        <img src="profile.jpg" alt="Ndiwane — Software Developer" loading="eager">
+      </div>
+ 
+      <!-- floating deco cards -->
+      <div class="photo-deco deco-1">
+        <span class="deco-icon">📱</span>
+        Flutter Dev
+      </div>
+      <div class="photo-deco deco-2">
+        <span class="deco-icon">🔒</span>
+        Ethical Hacking
+      </div>
+      <div class="photo-deco deco-3">
+        <span class="deco-icon">🇨🇲</span>
+        Buea, Cameroon
+      </div>
+ 
+      <div class="photo-corner">🌿</div>
+    </div>
+ 
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     ABOUT
+════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+ 
+      <!-- photo side -->
+      <div class="about-img-side reveal-left">
+        <img src="profile.jpg" alt="Ndiwane" class="about-photo">
+        <div class="about-badge ab1">
+          <div class="ab-icon">🎓</div>
+          <div class="ab-info">
+            <strong>University of Buea</strong>
+            <span>B.Tech Software Dev</span>
+          </div>
+        </div>
+        <div class="about-badge ab2">
+          <div class="ab-icon">🚀</div>
+          <div class="ab-info">
+            <strong>WandaTech Intern</strong>
+            <span>Starting July 2026</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- content side -->
+      <div class="about-content">
+        <div class="section-eyebrow reveal">About Me</div>
+        <h2 class="section-title char-reveal reveal d1">
+          A Dev Who Builds &amp; Secures
+        </h2>
+        <p class="section-sub reveal d2" style="margin: 1.2rem 0;">
+          I'm a recent B.Tech graduate in Software Development from the University of Buea, Cameroon.
+          My core strength is Flutter &amp; Firebase mobile development, and I'm actively expanding
+          into cybersecurity — running a Kali Linux home lab, practicing with nmap, and working through
+          TryHackMe structured learning paths.
+        </p>
+        <p class="section-sub reveal d3" style="margin-bottom: 1.8rem;">
+          My flagship project <strong>Agrinexa</strong> is an agriculture-focused mobile app for Cameroon
+          with Google Auth, real-time Firestore, and MTN MoMo / Orange Money payments via CinetPay.
+          I care about building things that make a real difference in African tech.
+        </p>
+ 
+        <div class="skills-wrap reveal d3">
+          <span class="skill-pill">Flutter</span>
+          <span class="skill-pill">Dart</span>
+          <span class="skill-pill">Firebase</span>
+          <span class="skill-pill">Riverpod</span>
+          <span class="skill-pill">Firestore</span>
+          <span class="skill-pill red">Kali Linux</span>
+          <span class="skill-pill red">Nmap</span>
+          <span class="skill-pill red">TryHackMe</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Git / GitHub</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+ 
+        <div class="reveal d4">
+          <a href="hire.html" class="btn-primary">Hire Me →</a>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     SERVICES
+════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-top">
+      <div>
+        <div class="section-eyebrow reveal">What I Do</div>
+        <h2 class="section-title char-reveal reveal d1">My <span class="green">Services</span></h2>
+      </div>
+      <a href="hire.html" class="btn-outline reveal">Start a Project →</a>
+    </div>
+ 
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="svc-icon-box">📱</div>
+        <div class="svc-title">Mobile App Development</div>
+        <div class="svc-desc">
+          Cross-platform Flutter apps for Android &amp; iOS. Firebase backend, Firestore, cloud functions,
+          real-time sync, Google Auth, and local mobile money payment integration via CinetPay.
+        </div>
+      </div>
+ 
+      <div class="service-card red-card reveal d1">
+        <div class="svc-icon-box">🔒</div>
+        <div class="svc-title">Cybersecurity Basics</div>
+        <div class="svc-desc">
+          Foundational security audits, network scanning with nmap, ethical hacking assessments,
+          and vulnerability reporting for small businesses, startups, and student projects.
+        </div>
+      </div>
+ 
+      <div class="service-card reveal d2">
+        <div class="svc-icon-box">🌐</div>
+        <div class="svc-title">Web Development</div>
+        <div class="svc-desc">
+          Responsive websites and web apps — student portals, business landing pages,
+          custom dashboards, and admin panels built with modern HTML/CSS/JS and backend APIs.
+        </div>
+      </div>
+ 
+      <div class="service-card reveal d1">
+        <div class="svc-icon-box">🎨</div>
+        <div class="svc-title">UI/UX Design</div>
+        <div class="svc-desc">
+          Clean, user-centred interfaces designed with Figma and implemented pixel-perfectly in Flutter or
+          HTML. Wireframes, prototypes, and component libraries.
+        </div>
+      </div>
+ 
+      <div class="service-card reveal d2">
+        <div class="svc-icon-box">🔧</div>
+        <div class="svc-title">API & Backend</div>
+        <div class="svc-desc">
+          RESTful API design, Firebase Cloud Functions, webhook security, payment gateway integration,
+          and scalable serverless architecture for mobile and web applications.
+        </div>
+      </div>
+ 
+      <div class="service-card red-card reveal d3">
+        <div class="svc-icon-box">🤝</div>
+        <div class="svc-title">Tech Consultation</div>
+        <div class="svc-desc">
+          Helping individuals and businesses make smart tech decisions — choosing the right stack,
+          planning MVP architecture, or scoping out a project from idea to launch.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     PROJECTS
+════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <div class="section-eyebrow reveal">Portfolio</div>
+        <h2 class="section-title char-reveal reveal d1">Recent <span class="red">Projects</span></h2>
+        <p class="section-sub reveal d2" style="margin-top:0.8rem;">Work I'm proud of — from agri-fintech apps to cybersecurity labs.</p>
+      </div>
+      <a href="https://github.com/Ndiwane" target="_blank" class="btn-outline reveal">All on GitHub →</a>
+    </div>
+ 
+    <div class="projects-grid">
+ 
+      <div class="project-card reveal">
+        <div class="project-thumb">
+          <div class="project-thumb-inner" style="background: linear-gradient(135deg,#0d3320,#1b4332);">🌿</div>
+          <span class="proj-label">Flutter · Firebase</span>
+          <div class="project-thumb-overlay">
+            <button class="proj-view-btn" onclick="window.open('https://github.com/Ndiwane/agrinexa_server','_blank')">
+              View on GitHub ↗
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Agrinexa</div>
+          <div class="project-desc">
+            Agriculture-focused mobile app for Cameroon. Google Sign-In, real-time Firestore database,
+            and MTN MoMo / Orange Money payments via CinetPay webhook integration.
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Flutter</span>
+            <span class="p-tag">Firebase</span>
+            <span class="p-tag">Riverpod</span>
+            <span class="p-tag">CinetPay</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="project-card reveal d1">
+        <div class="project-thumb">
+          <div class="project-thumb-inner" style="background: linear-gradient(135deg,#1a0000,#4a0e0e);">🛡️</div>
+          <span class="proj-label">Cybersecurity</span>
+          <div class="project-thumb-overlay">
+            <button class="proj-view-btn">Learn More ↗</button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Home Security Lab</div>
+          <div class="project-desc">
+            Kali Linux VM on VirtualBox, nmap network scanning, ifconfig/grep fundamentals,
+            and TryHackMe CTF challenges covering ethical hacking basics.
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Kali Linux</span>
+            <span class="p-tag">Nmap</span>
+            <span class="p-tag">TryHackMe</span>
+            <span class="p-tag">VirtualBox</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="project-card reveal d2">
+        <div class="project-thumb">
+          <div class="project-thumb-inner" style="background: linear-gradient(135deg,#182840,#0c1a2e);">🏫</div>
+          <span class="proj-label">Web Dev</span>
+          <div class="project-thumb-overlay">
+            <button class="proj-view-btn">View Project ↗</button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Student Portal</div>
+          <div class="project-desc">
+            High school student management portal with results tracking, attendance system,
+            and admin dashboard. Built for a Cameroonian secondary school context.
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">HTML/CSS</span>
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">REST API</span>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="project-card reveal d3">
+        <div class="project-thumb">
+          <div class="project-thumb-inner" style="background: linear-gradient(135deg,#1b3a10,#2d6a4f);">💼</div>
+          <span class="proj-label">Portfolio · 2025</span>
+          <div class="project-thumb-overlay">
+            <button class="proj-view-btn">You're Here ✓</button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">This Portfolio</div>
+          <div class="project-desc">
+            Hand-crafted responsive portfolio with a nature-inspired palette, typewriter header,
+            char-reveal animations, tilt cards, particle canvas, and zero frameworks.
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">HTML5</span>
+            <span class="p-tag">CSS3</span>
+            <span class="p-tag">Vanilla JS</span>
+            <span class="p-tag">Canvas API</span>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     EXPERIENCE
+════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="justify-content:center;">My Journey</div>
+    <h2 class="section-title char-reveal reveal d1" style="text-align:center;margin-bottom:3.5rem;">
+      Education &amp; <span class="green">Experience</span>
+    </h2>
+ 
+    <div class="exp-inner">
+ 
+      <!-- TIMELINE -->
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot">🎓</div>
+          <div class="tl-body">
+            <div class="tl-date">2020 – 2024</div>
+            <div class="tl-title">B.Tech — Software Development</div>
+            <div class="tl-org">University of Buea, Cameroon</div>
+            <div class="tl-desc">
+              Graduated with deep focus on software engineering principles, ACM/IEEE Code of Ethics,
+              mobile development, and final-year project Agrinexa — an agri-fintech platform.
+            </div>
+          </div>
+        </div>
+ 
+        <div class="tl-item reveal d1">
+          <div class="tl-dot">📱</div>
+          <div class="tl-body">
+            <div class="tl-date">2023 – Present</div>
+            <div class="tl-title">Flutter &amp; Firebase Developer</div>
+            <div class="tl-org">Freelance / Personal Projects</div>
+            <div class="tl-desc">
+              Built and maintained Agrinexa — cross-platform mobile app with real-time database,
+              authentication, and Cameroonian mobile money integration. Published to GitHub and actively maintained.
+            </div>
+          </div>
+        </div>
+ 
+        <div class="tl-item reveal d2">
+          <div class="tl-dot">🔒</div>
+          <div class="tl-body">
+            <div class="tl-date">2024 – Present</div>
+            <div class="tl-title">Cybersecurity Learner</div>
+            <div class="tl-org">Self-taught · TryHackMe · HackTheBox</div>
+            <div class="tl-desc">
+              Set up a Kali Linux home lab on VirtualBox. Practicing network enumeration, scanning,
+              and ethical hacking fundamentals through structured TryHackMe learning paths.
+            </div>
+          </div>
+        </div>
+ 
+        <div class="tl-item reveal d3">
+          <div class="tl-dot">🚀</div>
+          <div class="tl-body">
+            <div class="tl-date">July 2026</div>
+            <div class="tl-title">Software Development Intern</div>
+            <div class="tl-org">WandaTech</div>
+            <div class="tl-desc">
+              Upcoming internship. Ready to apply Flutter engineering skills, Firebase backend knowledge,
+              and growing cybersecurity awareness in a professional team environment.
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- CERTIFICATIONS / TOOLS -->
+      <div class="cert-side">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:800;margin-bottom:1.5rem;" class="reveal">
+          Skills &amp; Tools
+        </h3>
+ 
+        <div class="cert-card reveal">
+          <div class="cert-icon">📱</div>
+          <div>
+            <div class="cert-title">Flutter / Dart</div>
+            <div class="cert-sub">Cross-platform mobile development</div>
+          </div>
+          <span class="cert-badge badge-green">Advanced</span>
+        </div>
+ 
+        <div class="cert-card reveal d1">
+          <div class="cert-icon">🔥</div>
+          <div>
+            <div class="cert-title">Firebase Suite</div>
+            <div class="cert-sub">Auth · Firestore · Functions · Storage</div>
+          </div>
+          <span class="cert-badge badge-green">Advanced</span>
+        </div>
+ 
+        <div class="cert-card reveal d2">
+          <div class="cert-icon">🛡️</div>
+          <div>
+            <div class="cert-title">Kali Linux &amp; Nmap</div>
+            <div class="cert-sub">Ethical hacking, network scanning</div>
+          </div>
+          <span class="cert-badge badge-red">Learning</span>
+        </div>
+ 
+        <div class="cert-card reveal d3">
+          <div class="cert-icon">🐙</div>
+          <div>
+            <div class="cert-title">Git &amp; GitHub</div>
+            <div class="cert-sub">Version control &amp; collaboration</div>
+          </div>
+          <span class="cert-badge badge-green">Proficient</span>
+        </div>
+ 
+        <div class="cert-card reveal d4">
+          <div class="cert-icon">🐍</div>
+          <div>
+            <div class="cert-title">Python &amp; Node.js</div>
+            <div class="cert-sub">Scripting &amp; backend services</div>
+          </div>
+          <span class="cert-badge badge-sky">Intermediate</span>
+        </div>
+ 
+        <div class="cert-card reveal d5">
+          <div class="cert-icon">💳</div>
+          <div>
+            <div class="cert-title">CinetPay Integration</div>
+            <div class="cert-sub">MTN MoMo &amp; Orange Money webhooks</div>
+          </div>
+          <span class="cert-badge badge-green">Proficient</span>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     CERTIFICATES
+════════════════════════════ -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-eyebrow reveal" style="justify-content:center;">Credentials</div>
+    <h2 class="section-title char-reveal reveal d1" style="text-align:center;">My <span class="red">Certificates</span></h2>
+    <p class="section-sub reveal d2" style="text-align:center;margin:0.8rem auto 3.5rem;max-width:520px;">
+      Qualifications earned through formal education and professional online certification programmes.
+    </p>
+ 
+    <div class="certs-grid">
+ 
+      <!-- GCE O-LEVEL -->
+      <div class="cert-big-card reveal" data-category="education">
+        <div class="cbc-glow"></div>
+        <div class="cbc-header">
+          <div class="cbc-icon-wrap edu">&#x1F4DC;</div>
+          <div class="cbc-badge edu-badge">Education</div>
+        </div>
+        <div class="cbc-body">
+          <div class="cbc-title">GCE Ordinary Level</div>
+          <div class="cbc-issuer">Cameroon GCE Board &middot; Ministry of Education</div>
+          <div class="cbc-desc">
+            General Certificate of Education at Ordinary Level &mdash; foundational academic qualification
+            covering core sciences, mathematics, languages, and humanities.
+          </div>
+          <div class="cbc-subjects">
+            <span class="cbc-subj">Mathematics</span>
+            <span class="cbc-subj">Physics</span>
+            <span class="cbc-subj">Chemistry</span>
+            <span class="cbc-subj">English Language</span>
+            <span class="cbc-subj">Biology</span>
+            <span class="cbc-subj">French</span>
+          </div>
+        </div>
+        <div class="cbc-footer">
+          <div class="cbc-year">&#x1F4C5; Completed</div>
+          <div class="cbc-verify verified">&#x2713; Official</div>
+        </div>
+      </div>
+ 
+      <!-- GCE A-LEVEL -->
+      <div class="cert-big-card reveal d1" data-category="education">
+        <div class="cbc-glow red-glow"></div>
+        <div class="cbc-header">
+          <div class="cbc-icon-wrap red-edu">&#x1F393;</div>
+          <div class="cbc-badge red-badge">Education</div>
+        </div>
+        <div class="cbc-body">
+          <div class="cbc-title">GCE Advanced Level</div>
+          <div class="cbc-issuer">Cameroon GCE Board &middot; Ministry of Education</div>
+          <div class="cbc-desc">
+            General Certificate of Education at Advanced Level &mdash; higher secondary qualification,
+            specialising in technical and scientific subjects leading to university admission.
+          </div>
+          <div class="cbc-subjects">
+            <span class="cbc-subj">Computer Science</span>
+            <span class="cbc-subj">Mathematics</span>
+            <span class="cbc-subj">Physics</span>
+            <span class="cbc-subj">Further Mathematics</span>
+          </div>
+        </div>
+        <div class="cbc-footer">
+          <div class="cbc-year">&#x1F4C5; Completed</div>
+          <div class="cbc-verify verified">&#x2713; Official</div>
+        </div>
+      </div>
+ 
+      <!-- FLUTTER & DART -->
+      <div class="cert-big-card reveal d2" data-category="tech">
+        <div class="cbc-glow green-glow"></div>
+        <div class="cbc-header">
+          <div class="cbc-icon-wrap tech">&#x1F4F1;</div>
+          <div class="cbc-badge tech-badge">Technical</div>
+        </div>
+        <div class="cbc-body">
+          <div class="cbc-title">Flutter &amp; Dart Certification</div>
+          <div class="cbc-issuer">Professional Flutter Development Programme</div>
+          <div class="cbc-desc">
+            Certified competency in building production-grade cross-platform mobile applications
+            using Flutter framework and Dart language &mdash; including state management, Firebase integration,
+            and UI/UX implementation.
+          </div>
+          <div class="cbc-subjects">
+            <span class="cbc-subj">Flutter SDK</span>
+            <span class="cbc-subj">Dart Language</span>
+            <span class="cbc-subj">Riverpod</span>
+            <span class="cbc-subj">Firebase</span>
+            <span class="cbc-subj">Widget Tree</span>
+          </div>
+        </div>
+        <div class="cbc-footer">
+          <div class="cbc-year">&#x1F4C5; 2024</div>
+          <div class="cbc-verify verified green-verify">&#x2713; Certified</div>
+        </div>
+        <div class="cert-ribbon">&#x2B50; Core Skill</div>
+      </div>
+ 
+      <!-- PROMPT AI -->
+      <div class="cert-big-card reveal d3" data-category="tech">
+        <div class="cbc-glow sky-glow"></div>
+        <div class="cbc-header">
+          <div class="cbc-icon-wrap ai">&#x1F916;</div>
+          <div class="cbc-badge ai-badge">AI / Tech</div>
+        </div>
+        <div class="cbc-body">
+          <div class="cbc-title">Prompt Engineering &amp; AI Certification</div>
+          <div class="cbc-issuer">AI Certification Programme</div>
+          <div class="cbc-desc">
+            Certified in prompt engineering fundamentals &mdash; effective AI communication, structuring
+            prompts for large language models, AI tool usage for productivity, and responsible AI practices.
+          </div>
+          <div class="cbc-subjects">
+            <span class="cbc-subj">Prompt Design</span>
+            <span class="cbc-subj">LLM Interaction</span>
+            <span class="cbc-subj">AI Tools</span>
+            <span class="cbc-subj">Responsible AI</span>
+            <span class="cbc-subj">Productivity</span>
+          </div>
+        </div>
+        <div class="cbc-footer">
+          <div class="cbc-year">&#x1F4C5; 2025</div>
+          <div class="cbc-verify verified sky-verify">&#x2713; Certified</div>
+        </div>
+        <div class="cert-ribbon ai-ribbon">&#x1F9E0; AI Ready</div>
+      </div>
+ 
+    </div>
+ 
+    <!-- STATS ROW -->
+    <div class="cert-stats-row reveal">
+      <div class="cert-stat-item">
+        <div class="csi-num"><span data-count="4">0</span></div>
+        <div class="csi-label">Certificates</div>
+      </div>
+      <div class="cert-stat-item">
+        <div class="csi-num"><span data-count="2">0</span></div>
+        <div class="csi-label">Academic Quals</div>
+      </div>
+      <div class="cert-stat-item">
+        <div class="csi-num"><span data-count="2">0</span></div>
+        <div class="csi-label">Tech Certs</div>
+      </div>
+      <div class="cert-stat-item">
+        <div class="csi-num"><span data-count="100">0</span><span style="color:var(--red)">%</span></div>
+        <div class="csi-label">Committed</div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     CONTACT
+════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+ 
+      <div>
+        <div class="section-eyebrow reveal">Let's Connect</div>
+        <h2 class="section-title char-reveal reveal d1">
+          Ready to <span class="green">Build<br>Together?</span>
+        </h2>
+        <p class="section-sub reveal d2" style="margin: 1.2rem 0 0;">
+          Have a project, an opportunity, or just want to say hey?
+          My inbox is always open — I respond within 24 hours.
+        </p>
+ 
+        <div class="contact-links">
+          <a href="mailto:ndiwane@email.com" class="c-link reveal d1">
+            <span class="c-link-icon">📧</span>
+            <div class="c-link-text">
+              <strong>Email</strong>
+              <span>ndiwane@email.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/Ndiwane" target="_blank" class="c-link reveal d2">
+            <span class="c-link-icon">🐙</span>
+            <div class="c-link-text">
+              <strong>GitHub</strong>
+              <span>github.com/Ndiwane</span>
+            </div>
+          </a>
+          <a href="#" class="c-link reveal d3">
+            <span class="c-link-icon">💼</span>
+            <div class="c-link-text">
+              <strong>LinkedIn</strong>
+              <span>Connect professionally</span>
+            </div>
+          </a>
+          <a href="#" class="c-link reveal d4">
+            <span class="c-link-icon">🐦</span>
+            <div class="c-link-text">
+              <strong>X / Twitter</strong>
+              <span>Say hello online</span>
+            </div>
+          </a>
+        </div>
+      </div>
+ 
+      <!-- FORM -->
+      <div id="contactForm" class="contact-form reveal d2">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-input" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-input" placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" placeholder="Let's build something amazing">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project or idea…"></textarea>
+        </div>
+        <button class="form-submit" id="formSubmit">
+          Send Message <span>→</span>
+        </button>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <div class="footer-logo">Ndi<span class="dot">.</span>dev</div>
+  <div class="footer-copy">© 2025 Ndiwane · Crafted with ❤️ from Cameroon 🇨🇲</div>
+  <div class="footer-socials">
+    <a href="https://github.com/Ndiwane" target="_blank" class="soc-btn" title="GitHub">GH</a>
+    <a href="#" class="soc-btn" title="LinkedIn">in</a>
+    <a href="#" class="soc-btn" title="X">𝕏</a>
+  </div>
+</footer>
+ 
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+ 
+<script src="portfolio.js"></script>
+</body>
+</html>
